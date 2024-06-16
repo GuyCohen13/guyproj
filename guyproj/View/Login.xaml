@@ -1,0 +1,39 @@
+﻿<Page x:Class="guyproj.View.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:guyproj.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="400"
+      Title="Login">
+
+    <Grid Background="#FF2E2E2E">
+
+        <!-- Header with Close, Maximize, Minimize buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10" VerticalAlignment="Top">
+            <Button x:Name="btnMinimize" Content="-" Width="30" Height="30" Background="#FF4B4B4B" Foreground="White" Click="btnMinimize_Click"/>
+            <Button x:Name="btnMax" Content="☐" Width="30" Height="30" Background="#FF4B4B4B" Foreground="White" Click="btnMax_Click"/>
+            <Button x:Name="btnClose" Content="X" Width="30" Height="30" Background="#FF4B4B4B" Foreground="White" Click="btnClose_Click"/>
+        </StackPanel>
+
+        <!-- Main content -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+
+            <TextBlock Text="Login" Foreground="LightGray" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+            <TextBlock Text="Email" Foreground="LightGray" Margin="0,0,0,5"/>
+            <TextBox x:Name="txtUser" FontSize="16" Background="White" Foreground="Black" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Password" Foreground="LightGray" Margin="0,10,0,5"/>
+            <PasswordBox x:Name="txtPassword" FontSize="16" Background="White" Foreground="Black" Margin="0,0,0,20"/>
+
+            <Button x:Name="btnLogin" Content="Login" Background="#FF4B4B4B" Foreground="White" FontSize="18" Height="40" Margin="0,0,0,10" Click="btnLogin_Click"/>
+
+            <TextBlock Text="Don't have an account?" Foreground="LightGray" HorizontalAlignment="Center" Margin="0,10,0,5"/>
+            <Button x:Name="btnRegister" Content="Register" Background="#FF4B4B4B" Foreground="White" FontSize="18" Height="40" Click="btnRegister_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Page>

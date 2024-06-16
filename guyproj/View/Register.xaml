@@ -1,0 +1,161 @@
+﻿<Page x:Class="guyproj.View.Register"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:guyproj.View"
+      mc:Ignorable="d"
+      d:DesignHeight="900" d:DesignWidth="600"
+      Title="Register"
+      Background="#2E2E2E">
+
+    <Grid>
+        <!-- Header -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#24313C">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="25"/>
+                <ColumnDefinition Width="5"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock
+                Text="REGISTER"
+                Foreground="LightGray"
+                FontSize="20"
+                FontFamily="Montserrat"
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Margin="10,0,0,0"/>
+
+            <Button
+                x:Name="btnMinimize"
+                Background="#24313C"
+                BorderThickness="0"
+                Content="-"
+                Foreground="Cyan"
+                FontSize="30"
+                Cursor="Hand"
+                Grid.Column="1"
+                Click="btnMinimize_Click"/>
+
+            <Button
+                x:Name="btnClose"
+                Background="#24313C"
+                BorderThickness="0"
+                Content="X"
+                Foreground="#F90C0C"
+                FontSize="20"
+                Cursor="Hand"
+                Grid.Column="2"
+                Click="btnClose_Click"/>
+        </Grid>
+
+        <StackPanel Width="350"
+                    Grid.Row="2"
+                    Orientation="Vertical"
+                    Margin="0,55,0,0">
+            <TextBlock Text="Register"
+                       Foreground="LightGray"
+                       FontSize="25"
+                       FontWeight="Medium"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Email"
+                       Foreground="LightGray"
+                       FontSize="12"
+                       Margin="0,200,0,0"/>
+            <TextBox x:Name="txtUser"
+                     FontSize="20"
+                     FontWeight="ExtraLight"
+                     CaretBrush="LightGray"
+                     BorderThickness="0,0,0,1"
+                     Height="28"
+                     VerticalAlignment="Center"
+                     Background="Transparent"
+                     Foreground="LightGray"/>
+
+            <TextBlock Text="Password"
+                       Foreground="LightGray"
+                       FontSize="12"
+                       Margin="0,10,0,0"/>
+            <PasswordBox x:Name="txtPassword"
+                         FontSize="20"
+                         FontWeight="ExtraLight"
+                         CaretBrush="LightGray"
+                         BorderThickness="0,0,0,1"
+                         Height="28"
+                         VerticalAlignment="Center"
+                         Background="Transparent"
+                         Foreground="LightGray"/>
+
+            <TextBlock Text="Name"
+                       Foreground="LightGray"
+                       FontSize="12"
+                       Margin="0,10,0,0"/>
+            <TextBox x:Name="txtName"
+                     FontSize="20"
+                     FontWeight="ExtraLight"
+                     CaretBrush="LightGray"
+                     BorderThickness="0,0,0,1"
+                     Height="28"
+                     VerticalAlignment="Center"
+                     Background="Transparent"
+                     Foreground="LightGray"/>
+
+            <TextBlock Text="Family name"
+                       Foreground="LightGray"
+                       FontSize="12"
+                       Margin="0,10,0,0"/>
+            <TextBox x:Name="txtFamily"
+                     FontSize="20"
+                     FontWeight="ExtraLight"
+                     CaretBrush="LightGray"
+                     BorderThickness="0,0,0,1"
+                     Height="28"
+                     VerticalAlignment="Center"
+                     Background="Transparent"
+                     Foreground="LightGray"/>
+
+            <TextBlock Text="Age"
+                       Foreground="LightGray"
+                       FontSize="12"
+                       Margin="0,10,0,0"/>
+            <TextBox x:Name="txtAge"
+                     FontSize="20"
+                     FontWeight="ExtraLight"
+                     CaretBrush="LightGray"
+                     BorderThickness="0,0,0,1"
+                     Height="28"
+                     VerticalAlignment="Center"
+                     Background="Transparent"
+                     Foreground="LightGray"
+                     KeyDown="txtAge_KeyDown"/>
+
+            <Button x:Name="btnRegister"
+                    BorderThickness="0"
+                    Content="Register"
+                    Foreground="White"
+                    FontSize="20"
+                    Cursor="Hand"
+                    Background="#2E8F8F"
+                    Height="40"
+                    Click="btnRegister_Click"/>
+            <Button x:Name="btnGoBack"
+                    BorderThickness="0"
+                    Content="Back"
+                    Foreground="White"
+                    FontSize="20"
+                    Cursor="Hand"
+                    Background="#2E8F8F"
+                    Height="40"
+                    
+                    Click="btnGoBack_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
